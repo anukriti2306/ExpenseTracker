@@ -9,7 +9,18 @@ const Login = () =>{
   const [error, setError]=useState(null);
   
   const navigate = useNavigate();
-  const handleLogin = async (e) => {}
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    if(!validateEmail(email)){
+      setError("Please enter a valid email address");
+      return;
+    }
+    if(!password){
+      setError("Please enter the password");
+      return;
+    }
+    setError("");
+  }
   return(
     <AuthLayout>
       <div className="lg:w-[70%] h-3/4 md:h-full flex flex-col justify-center">
