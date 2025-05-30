@@ -49,15 +49,15 @@ const SignUp = () =>{
           </div>
           </div>
            {error && <p className="text-red-500 text-xs pb-2.5">{error}</p>}
-            <button type="submit" className="btn-primary">
-            SIGN <UP></UP>
-            </button>
-            <p className="text-[13px] text-slate-800 mt-3">
-                Already have an account?{" "}
-                <Link className="font-medium text-primary underline" to="/login">
-                  Login
-                </Link>
-            </p>
+                  <button type="submit" className="btn-primary">
+                  SIGN UP
+                  </button>
+                  <p className="text-[13px] text-slate-800 mt-3">
+                     Already have an account?{" "}
+                      <Link className="font-medium text-primary underline" to="/login">
+                        SignUp
+                      </Link>
+                  </p>
         </form>
       </div>
     </AuthLayout>
