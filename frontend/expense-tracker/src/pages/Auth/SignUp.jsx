@@ -53,4 +53,4 @@ const SignUp = () =>{
     </AuthLayout>
   )
 }
-export default SignUp
+export default SignUp;
