@@ -20,6 +20,9 @@ const SignUp = () =>{
           Join us today by entering your details below.
         </p>
         <form onSubmit={handleSignup}>
+
+            <ProfilePhotoSelector image={profilePic} setImage={setProfilePic}/>
+            
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <Input
             value={fullName}
