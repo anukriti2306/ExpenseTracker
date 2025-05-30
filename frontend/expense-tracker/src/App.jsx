@@ -12,9 +12,13 @@ import Home from "./pages/Dashboard/Home";
 import Income from "./pages/Dashboard/Income";
 import Expense from "./pages/Dashboard/Expense";
 import './index.css';
+
+
 const App = () =>{
+  
   return(
-    <div>
+    
+    <div>      
       <Router>
         <Routes>
           <Route path="/" element={<Root />} />
@@ -26,6 +30,7 @@ const App = () =>{
         </Routes>
       </Router>
     </div>
+    
   );
 };
 export default App;

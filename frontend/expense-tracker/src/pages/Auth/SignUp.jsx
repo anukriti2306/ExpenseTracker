@@ -3,7 +3,7 @@ import AuthLayout from '../../components/layouts/AuthLayout';
 import { useNavigate, Link } from 'react-router-dom';
 import Input from '../../components/Inputs/Input';
 import { validateEmail } from "../../utils/helper";
-
+import ProfilePhotoSelector from '../../components/Inputs/ProfilePhotoSelector';
 const SignUp = () =>{
   const [profilePic, setProfilePic] = useState(null);
   const [fullName, setFullName] = useState("");
