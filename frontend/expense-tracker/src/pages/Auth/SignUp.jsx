@@ -11,7 +11,23 @@ const SignUp = () =>{
   const [password, setPassword]=useState("");
   const [error, setError]=useState(null);
   const navigate=useNavigate();
-  const handleSignup = async(e) =>{}
+  const handleSignup = async(e) =>{
+    e.preventDefault();
+    let profileImageUrl="";
+    if(!fullName){
+      setError("Please enter your name");
+      return;
+    }
+    if(!validateEmail(email)){
+      setError("Please enter a validate email address");
+      return;
+    }
+    if(!password){
+      setError("Please enter the password");
+      return;
+    }
+    setError("");
+  };
   return(
     <AuthLayout>
       <div className="lg:w-[100%] h-auto md:h-full mt-10 md:mt-0 flex flex-col justify-center">
