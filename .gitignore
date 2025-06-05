@@ -1,4 +1,4 @@
 backend/.env
 mongostuff.txt
 backend/node_modules
-frontend/src/assets/images/image.png
+frontend/expense-tracker/src/assets/images/image.png
