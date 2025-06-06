@@ -6,4 +6,4 @@ const Home = () =>{
     </DashboardLayout>
   );
 };
-export default Home
+export default Home;
