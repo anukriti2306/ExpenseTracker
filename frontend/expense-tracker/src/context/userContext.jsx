@@ -1,18 +1,25 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useEffect } from "react";
 
 export const UserContext = createContext();
 
 const UserProvider = ({ children }) => {
     const [user, setUser] = useState(null);
 
-    // Function to update the user data
+    useEffect(() => {
+        const storedUser = localStorage.getItem("user");
+        if (storedUser) {
+            setUser(JSON.parse(storedUser));
+        }
+    }, []);
+
     const updateUser = (userData) => {
         setUser(userData);
+        localStorage.setItem("user", JSON.stringify(userData)); // persist it
     };
 
-    // Function to clear the user data, like when logging out
     const clearUser = () => {
         setUser(null);
+        localStorage.removeItem("user");
     };
 
     return (
