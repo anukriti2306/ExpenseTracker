@@ -8,7 +8,7 @@ const Last30DaysExpenses = ({data}) => {
     setChartData(result);
     return () =>{};
 
-  }, {data});
+  }, [data]);
   return (
     <div className="card col-span-1">
         <div className="flex items-center justify-between">

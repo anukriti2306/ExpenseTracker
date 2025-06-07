@@ -20,11 +20,27 @@ const TransactionInfoCard = ({
       ? 'bg-green-50 text-green-500'
       : 'bg-red-50 text-red-500';
 
+  // Detect image URL
+  const isImageUrl =
+    typeof icon === 'string' &&
+    (icon.startsWith('http') || icon.match(/\.(png|jpg|jpeg|gif|svg)$/i));
+
+  // Helper to check if icon is a valid emoji character (basic check)
+  // You can extend this with a more robust emoji detection if needed
+  const isEmoji = (str) =>
+    typeof str === 'string' &&
+    str.length > 0 &&
+    [...str].some((char) => /\p{Emoji}/u.test(char));
+
   return (
     <div className="group relative flex items-center gap-4 mt-2 p-3 rounded-lg hover:bg-gray-100/60">
       <div className="w-12 h-12 flex items-center justify-center text-xl text-gray-800 bg-gray-100 rounded-full">
-        {icon ? (
-          <img src={icon} alt={title} className="w-6 h-6" />
+        {icon && (isImageUrl || isEmoji(icon)) ? (
+          isImageUrl ? (
+            <img src={icon} alt={title} className="w-6 h-6" />
+          ) : (
+            <span>{icon}</span>
+          )
         ) : (
           <LuUtensils />
         )}
