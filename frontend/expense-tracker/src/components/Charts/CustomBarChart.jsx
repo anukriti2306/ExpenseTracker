@@ -6,7 +6,6 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
   Cell,
 } from 'recharts';
@@ -21,7 +20,7 @@ const CustomBarChart = ({ data }) => {
       return (
         <div className="bg-white shadow-md rounded-lg p-2 border border-gray-300">
           <p className="text-xs font-semibold text-purple-800 mb-1">
-            {payload[0].payload.category}
+            {payload[0].payload.date}
           </p>
           <p className="text-sm text-gray-600">
             Amount:{' '}
@@ -41,10 +40,12 @@ const CustomBarChart = ({ data }) => {
         <BarChart data={data}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis
-            dataKey="category"
-            tick={{ fontSize: 12, fill: '#555' }}
-            stroke="none"
+          dataKey="category"
+          tick={{ fontSize: 12, fill: '#555' }}
+          stroke="none"
+          interval={0}
           />
+
           <YAxis tick={{ fontSize: 12, fill: '#555' }} stroke="none" />
           <Tooltip content={<CustomTooltip />} />
           <Bar
