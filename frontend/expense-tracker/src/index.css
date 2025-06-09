@@ -14,15 +14,15 @@
   }
 
   body {
-    background-color: #ffffff;
+    background-color: #ffff;
     overflow-x: hidden;
-    color: #111827; /* near black */
+    color: #111821; /* near black */
   }
 }
 
 /* Input Box */
 .input-box {
-  @apply w-full flex justify-between gap-3 text-sm text-black bg-slate-100 rounded px-4 py-3 mb-4 mt-3 border border-slate-200 outline-none;
+  @apply w-full flex justify-between gap-3 text-sm text-black bg-slate-200 rounded px-4 py-3 mb-4 mt-3 border border-pink-800 outline-none;
 }
 
 /* Primary Button */
