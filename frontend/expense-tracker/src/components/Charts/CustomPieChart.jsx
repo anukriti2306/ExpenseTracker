@@ -59,7 +59,7 @@ const CustomPieChart = ({
               fontSize="24px"
               fontWeight="600"
             >
-              ${totalAmount}
+              ₹{totalAmount}
             </text>
           </>
         )}
