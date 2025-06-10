@@ -14,15 +14,28 @@ export const getInitials = (name) =>{
   return initials.toUpperCase();
 };
 
-export const addThousandsSeparator = (num) =>{
-  if(num==null|| isNaN(num)) return "";
-  const [IntegerPart, FractionalPart] = num.toString().split(".");
-  const formattedInteger = IntegerPart.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  return FractionalPart
-  ? `${formattedInteger}.${FractionalPart}`
-  :formattedInteger;
+export const addThousandsSeparator = (num) => {
+  if (num == null || isNaN(num)) return "";
 
+  const [integerPart, fractionalPart] = num.toString().split(".");
+
+  const lastThree = integerPart.slice(-3);
+  const otherDigits = integerPart.slice(0, -3);
+
+  let formattedInteger = "";
+
+  if (otherDigits !== "") {
+    formattedInteger =
+      otherDigits.replace(/\B(?=(\d{2})+(?!\d))/g, ",") + "," + lastThree;
+  } else {
+    formattedInteger = lastThree;
+  }
+
+  return fractionalPart
+    ? `${formattedInteger}.${fractionalPart}`
+    : formattedInteger;
 };
+
 export const prepareExpenseBarChartData = (data = []) => {
   const chartData = data.map(item => ({
     category: item?.category,
