@@ -2,8 +2,7 @@
 
 A responsive, feature-rich Expense Tracker built with the **MERN Stack** — MongoDB, Express, React, and Node.js. Easily track your income and expenses, visualize data with interactive charts, and export your financial reports — all with secure JWT-based authentication.
 
-> 🚀 Inspired by a project-based tutorial by [TimeToProgram](https://www.youtube.com/@TimeToProgram)
-Deployed at https://expense-tracker-git-main-anu-sharmas-projects.vercel.app/login
+> 🚀 Inspired by a project-based tutorial by [TimeToProgram](https://www.youtube.com/@TimeToProgram); deployed at https://expense-tracker-git-main-anu-sharmas-projects.vercel.app/login
 ---
 
 ## ✨ Features
