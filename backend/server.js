@@ -14,7 +14,7 @@ const app = express();
 connectDB();
 
 const allowedOrigins = [
-  "https://expense-tracker-git-main-anu-sharmas-projects.vercel.app",
+  "https://https://expense-tracker-weld-psi-21.vercel.app",
   "http://localhost:5173" // (optional, for local testing)
 ];
 
