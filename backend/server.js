@@ -38,6 +38,9 @@ app.use(express.json());
 
 // Serve static files (e.g. uploaded images)
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+app.get("/ping", (req, res) => {
+  res.status(200).send("Server is alive");
+});
 
 // API Routes
 app.use("/api/v1/auth", authRoutes);
