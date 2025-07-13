@@ -13,30 +13,30 @@ const app = express();
 // Connect to MongoDB
 connectDB();
 
+// List of allowed frontend origins
 const allowedOrigins = [
-  "https://expense-tracker-weld-psi-21.vercel.app/login",
-  "http://localhost:5173" // (optional, for local testing)
+  "https://expense-tracker-weld-psi-21.vercel.app",
+  "http://localhost:5173"
 ];
 
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  })
-);
+// CORS Configuration
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
 
-// Middleware
+// Middleware to parse JSON
 app.use(express.json());
 
-// Static uploads path
+// Serve static files (e.g. uploaded images)
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // API Routes
@@ -45,6 +45,6 @@ app.use("/api/v1/income", incomeRoutes);
 app.use("/api/v1/expense", expenseRoutes);
 app.use("/api/v1/dashboard", dashboardRoutes);
 
-// Start server
+// Start the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server listening on PORT ${PORT}`));
