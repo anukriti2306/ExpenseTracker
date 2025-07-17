@@ -2,7 +2,29 @@
 
 A responsive, feature-rich Expense Tracker built with the **MERN Stack** — MongoDB, Express, React, and Node.js. Easily track your income and expenses, visualize data with interactive charts, and export your financial reports — all with secure JWT-based authentication.
 
-> 🚀 Inspired by a project-based tutorial by [TimeToProgram](https://www.youtube.com/@TimeToProgram); deployed at https://expense-tracker-weld-psi-21.vercel.app/login
+> 🚀 Inspired by a project-based tutorial by [TimeToProgram](https://www.youtube.com/@TimeToProgram)
+
+---
+
+## 🌐 Deployed At
+
+🔗 [https://expense-tracker-weld-psi-21.vercel.app/login](https://expense-tracker-weld-psi-21.vercel.app/login)
+
+---
+
+## 📸 Here's what it looks like!
+
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/343b7c88-9ce1-4772-9fc4-730e0107f5f2" width="100%"/></td>
+    <td><img src="https://github.com/user-attachments/assets/5eb32041-ccbe-40d5-bb13-b8b323227f23" width="100%"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/c5babedb-8dc7-460c-8290-8ce9655fed93" width="100%"/></td>
+    <td><img src="https://github.com/user-attachments/assets/3c6e5a23-61dc-40d1-ac80-252d049fe0fd" width="100%"/></td>
+  </tr>
+</table>
+
 ---
 
 ## ✨ Features
@@ -54,25 +76,20 @@ A responsive, feature-rich Expense Tracker built with the **MERN Stack** — Mon
 ```bash
 git clone https://github.com/anukriti2306/ExpenseTracker.git
 cd ExpenseTracker
-
 ```
 ### 2. Backend setup
 ```bash
 cd server
 npm install
-```
-Then, start the backend using
-```bash
 npm start
 ```
-
-### 3.Frontend setup
+### 3. Frontend setup
 ```bash
 cd client
 npm install
 npm run dev
 ```
-### 📁 Project Structure
+## 📁 Project Structure
 ```bash
 ExpenseTracker/
 ├── client/       # React Frontend
@@ -81,11 +98,9 @@ ExpenseTracker/
 │   └── ...
 └── README.md
 ```
-### 📌 Upcoming Enhancements
- Add category-based filters
-
- Add dark mode 🌙
-
- Implement user profile settings
-
-
+## 📌 Upcoming Enhancements
+```
+• Add category-based filters  
+• Add dark mode 🌙
+• Implement user profile settings
+```
