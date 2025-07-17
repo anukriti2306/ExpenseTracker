@@ -8,7 +8,8 @@ A responsive, feature-rich Expense Tracker built with the **MERN Stack** — Mon
 
 ## 🌐 Deployed At
 
-🔗 [https://expense-tracker-weld-psi-21.vercel.app](https://expense-tracker-weld-psi-21.vercel.app)
+[![Visit App](https://img.shields.io/badge/Visit_App-Click_Here-blue?style=for-the-badge)](https://expense-tracker-weld-psi-21.vercel.app)
+
 
 
 ---
