@@ -2,7 +2,7 @@
 
 A responsive, feature-rich Expense Tracker built with the **MERN Stack** — MongoDB, Express, React, and Node.js. Easily track your income and expenses, visualize data with interactive charts, and export your financial reports — all with secure JWT-based authentication.
 
-🔒 Proprietary & Security Notice This repository is maintained as a Public Showcase Version. To prevent unauthorized replication of original architectural logic and ensure data security for users, certain core configurations and middleware have been restricted to the local production environment. The crucial files can be granted access to only upon request.
+🔒 Proprietary & Security Notice This repository is maintained as a Public Showcase Version. To prevent unauthorized replication of original architectural logic and ensure data security for users, certain core configurations and middleware have been restricted to the local production environment. The crucial files can be granted access only upon request.
 
 ---
 
