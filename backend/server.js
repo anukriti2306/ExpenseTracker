@@ -15,7 +15,6 @@ connectDB();
 
 // List of allowed frontend origins
 const allowedOrigins = [
-  "https://expense-tracker-weld-psi-21.vercel.app",
   "http://localhost:5173"
 ];
 
