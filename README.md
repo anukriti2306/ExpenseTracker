@@ -14,7 +14,7 @@ A responsive, feature-rich Expense Tracker built with the **MERN Stack** — Mon
 
 ---
 
-## 📸 Here's what it looks like!
+## Features
 
 <table>
   <tr>
